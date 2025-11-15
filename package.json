@@ -1,0 +1,22 @@
+{
+  "name": "ui",
+  "private": true,
+  "version": "0.0.1",
+  "description": "UI components for various projects",
+  "keywords": [
+    "ui",
+    "components",
+    "library",
+    "vue",
+    "reka-ui"
+  ],
+  "scripts": {
+    "update:all": "taze -r -l -I latest"
+  },
+  "author": "Roman Nuritdinov (Perdolique)",
+  "license": "UNLICENSED",
+  "packageManager": "pnpm@10.22.0",
+  "devDependencies": {
+    "taze": "19.9.0"
+  }
+}
