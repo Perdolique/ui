@@ -19,3 +19,15 @@ pnpm dev
 ```bash
 pnpm build
 ```
+
+## Preview 👀
+
+```bash
+pnpm preview
+```
+
+## Update Dependencies 🔄
+
+```bash
+pnpm update:all
+```
