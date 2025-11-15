@@ -8,14 +8,11 @@ A set of UI components for various projects built with Vue 3✨
 - TypeScript
 - Vite (Rolldown)
 
-## Development 💻
+## Commands 💻
 
-```bash
-pnpm dev
-```
-
-## Build 📦
-
-```bash
-pnpm build
-```
+| Command | Description |
+|---------|-------------|
+| `pnpm dev` | Start development server |
+| `pnpm build` | Build for production |
+| `pnpm preview` | Preview production build |
+| `pnpm update:all` | Update all dependencies to latest |
