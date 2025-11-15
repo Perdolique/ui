@@ -1,8 +1,11 @@
 {
   "name": "ui",
   "private": true,
+  "type": "module",
   "version": "0.0.1",
   "description": "UI components for various projects",
+  "author": "Roman Nuritdinov (Perdolique)",
+  "license": "UNLICENSED",
   "keywords": [
     "ui",
     "components",
@@ -11,12 +14,27 @@
     "reka-ui"
   ],
   "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
     "update:all": "taze -r -l -I latest"
   },
-  "author": "Roman Nuritdinov (Perdolique)",
-  "license": "UNLICENSED",
-  "packageManager": "pnpm@10.22.0",
+  "dependencies": {
+    "vue": "3.5.24"
+  },
   "devDependencies": {
-    "taze": "19.9.0"
+    "@types/node": "24.10.1",
+    "@vitejs/plugin-vue": "6.0.1",
+    "@vue/tsconfig": "0.8.1",
+    "taze": "19.9.0",
+    "typescript": "5.9.3",
+    "vite": "npm:rolldown-vite@7.2.5",
+    "vue-tsc": "3.1.4"
+  },
+  "packageManager": "pnpm@10.22.0",
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:rolldown-vite@7.2.5"
+    }
   }
 }
