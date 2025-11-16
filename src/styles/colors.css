@@ -2,29 +2,29 @@
   color-scheme: light;
 
   /* Base colors */
-  --color-text: oklch(25% 0.01 264);
-  --color-background: oklch(100% 0 0);
-  --color-link: oklch(59% 0.20 252);
-  --color-link-hover: oklch(67% 0.17 252);
-  --color-button-background: oklch(97% 0 0);
+  --color-text: oklch(25% 0.01 264deg);
+  --color-background: oklch(100% 0 0deg);
+  --color-link: oklch(59% 0.20 252deg);
+  --color-link-hover: oklch(67% 0.17 252deg);
+  --color-button-background: oklch(97% 0 0deg);
 
   /* Input backgrounds */
-  --color-input-background: oklch(100% 0 0);
-  --color-input-background-hover: oklch(97% 0 0);
-  --color-input-background-active: oklch(59% 0.20 252);
-  --color-input-background-active-hover: oklch(52% 0.23 252);
+  --color-input-background: oklch(100% 0 0deg);
+  --color-input-background-hover: oklch(97% 0 0deg);
+  --color-input-background-active: oklch(59% 0.20 252deg);
+  --color-input-background-active-hover: oklch(52% 0.23 252deg);
 
   /* Borders */
-  --color-input-border: oklch(86% 0.01 264);
-  --color-input-border-hover: oklch(71% 0.01 264);
-  --color-input-border-active: oklch(59% 0.20 252);
-  --color-input-border-active-hover: oklch(52% 0.23 252);
+  --color-input-border: oklch(86% 0.01 264deg);
+  --color-input-border-hover: oklch(71% 0.01 264deg);
+  --color-input-border-active: oklch(59% 0.20 252deg);
+  --color-input-border-active-hover: oklch(52% 0.23 252deg);
 
   /* Icons */
-  --color-input-icon: oklch(100% 0 0);
+  --color-input-icon: oklch(100% 0 0deg);
 
   /* Focus states */
-  --color-input-focus: oklch(59% 0.20 252 / 50%);
+  --color-input-focus: oklch(59% 0.20 252deg / 50%);
 
   /* Disabled state */
   --color-input-disabled-opacity: 0.5;
@@ -35,28 +35,28 @@
     color-scheme: dark;
 
     /* Base colors */
-    --color-text: oklch(85% 0.01 264);
-    --color-background: oklch(15% 0.02 264);
-    --color-link: oklch(67% 0.17 252);
-    --color-link-hover: oklch(75% 0.17 252);
-    --color-button-background: oklch(26% 0.02 264);
+    --color-text: oklch(85% 0.01 264deg);
+    --color-background: oklch(15% 0.02 264deg);
+    --color-link: oklch(67% 0.17 252deg);
+    --color-link-hover: oklch(75% 0.17 252deg);
+    --color-button-background: oklch(26% 0.02 264deg);
 
     /* Input backgrounds */
-    --color-input-background: oklch(26% 0.02 264);
-    --color-input-background-hover: oklch(32% 0.02 264);
-    --color-input-background-active: oklch(67% 0.17 252);
-    --color-input-background-active-hover: oklch(59% 0.20 252);
+    --color-input-background: oklch(26% 0.02 264deg);
+    --color-input-background-hover: oklch(32% 0.02 264deg);
+    --color-input-background-active: oklch(67% 0.17 252deg);
+    --color-input-background-active-hover: oklch(59% 0.20 252deg);
 
     /* Borders */
-    --color-input-border: oklch(41% 0.02 264);
-    --color-input-border-hover: oklch(51% 0.02 264);
-    --color-input-border-active: oklch(67% 0.17 252);
-    --color-input-border-active-hover: oklch(59% 0.20 252);
+    --color-input-border: oklch(41% 0.02 264deg);
+    --color-input-border-hover: oklch(51% 0.02 264deg);
+    --color-input-border-active: oklch(67% 0.17 252deg);
+    --color-input-border-active-hover: oklch(59% 0.20 252deg);
 
     /* Icons */
-    --color-input-icon: oklch(100% 0 0);
+    --color-input-icon: oklch(100% 0 0deg);
 
     /* Focus states */
-    --color-input-focus: oklch(59% 0.20 252 / 50%);
+    --color-input-focus: oklch(59% 0.20 252deg / 50%);
   }
 }

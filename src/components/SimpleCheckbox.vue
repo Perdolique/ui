@@ -32,11 +32,6 @@
     color: var(--color-input-icon);
   }
 
-  .component:hover:not(:disabled) {
-    background-color: var(--color-input-background-hover);
-    border-color: var(--color-input-border-hover);
-  }
-
   .component[data-state="checked"] {
     background-color: var(--color-input-background-active);
     border-color: var(--color-input-border-active);
@@ -54,5 +49,10 @@
   .component:disabled {
     opacity: var(--color-input-disabled-opacity);
     cursor: not-allowed;
+  }
+
+  .component:hover:not(:disabled) {
+    background-color: var(--color-input-background-hover);
+    border-color: var(--color-input-border-hover);
   }
 </style>
