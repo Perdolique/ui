@@ -1,0 +1,37 @@
+import { defineConfig, globalIgnores } from 'eslint/config'
+import { configs } from 'eslint-config-greenpie'
+
+export default defineConfig(
+  globalIgnores([
+    'dist'
+  ]),
+
+  ...configs.default,
+  ...configs.vue,
+
+  {
+    files: ['**/*.js', '**/*.ts', '**/*.vue'],
+
+    rules: {
+      '@stylistic/semi': ['error', 'never']
+    }
+  },
+
+  {
+    files: ['**/*.vue'],
+
+    rules: {
+      'vue/no-bare-strings-in-template': 'off',
+
+      'vue/block-lang': ['error', {
+        script: {
+          lang: 'ts'
+        },
+
+        style: {
+          lang: 'css'
+        }
+      }]
+    }
+  }
+)

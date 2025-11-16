@@ -5,9 +5,13 @@
 
       <div :class="$style.checkboxes">
         <SimpleCheckbox />
-        <SimpleCheckbox :model-value="true" />
+        <SimpleCheckbox model-value />
         <SimpleCheckbox disabled />
-        <SimpleCheckbox disabled :model-value="true" />
+
+        <SimpleCheckbox
+          disabled
+          model-value
+        />
       </div>
     </section>
   </main>

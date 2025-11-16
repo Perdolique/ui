@@ -19,6 +19,9 @@
     "preview": "vite preview",
     "update:all": "taze -r -l -I latest",
     "lint:styles": "stylelint 'src/**/*.vue' 'src/**/*.css'",
+    "lint:oxlint": "oxlint",
+    "lint:eslint": "eslint",
+    "lint:all": "pnpm run --parallel '/^lint:/'",
     "prepare": "husky"
   },
   "dependencies": {
@@ -29,7 +32,10 @@
     "@types/node": "24.10.1",
     "@vitejs/plugin-vue": "6.0.1",
     "@vue/tsconfig": "0.8.1",
+    "eslint": "9.39.1",
+    "eslint-config-greenpie": "14.14.0",
     "husky": "9.1.7",
+    "oxlint": "1.28.0",
     "reka-ui": "2.6.0",
     "stylelint": "16.25.0",
     "stylelint-config-recommended-vue": "1.6.1",
