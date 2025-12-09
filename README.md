@@ -7,10 +7,27 @@ A set of UI components for various projects built with Vue 3✨
 - Vue 3
 - TypeScript
 - Vite (Rolldown)
+- Reka UI
+- Inter Variable font
 
 ## Components 🧩
 
 - `SimpleCheckbox` - Simple checkbox component
+- `CollapsiblePanel` - Collapsible panel with smooth animations
+
+## Icons 🖼️
+
+- `@iconify/vue` - Iconify integration
+- `@iconify-json/tabler` - Tabler icons collection
+- `@iconify-json/streamline` - Streamline icons collection
+- `unplugin-icons` - Auto-import icons
+
+## Styling 🎨
+
+- CSS custom properties
+- Design tokens for colors, spacing, transitions, sizes, typography
+- Material Design 3 inspired transitions
+- Support for light/dark themes
 
 ## Linting 🧹
 

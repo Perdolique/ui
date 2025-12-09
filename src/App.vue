@@ -1,9 +1,7 @@
 <template>
   <main>
-    <section :class="$style.section">
-      <h2>SimpleCheckbox</h2>
-
-      <div :class="$style.checkboxes">
+    <CollapsiblePanel title="SimpleCheckbox">
+      <div class="checkboxes">
         <SimpleCheckbox />
         <SimpleCheckbox model-value />
         <SimpleCheckbox disabled />
@@ -13,20 +11,16 @@
           model-value
         />
       </div>
-    </section>
+    </CollapsiblePanel>
   </main>
 </template>
 
 <script setup lang="ts">
   import SimpleCheckbox from './components/SimpleCheckbox.vue'
+  import CollapsiblePanel from './components/CollapsiblePanel.vue'
 </script>
 
-<style module>
-  .section {
-    display: grid;
-    row-gap: var(--spacing-16);
-  }
-
+<style scoped>
   .checkboxes {
     display: flex;
     column-gap: var(--spacing-8);

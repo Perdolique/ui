@@ -1,5 +1,5 @@
 <template>
-  <CheckboxRoot :class="$style.component">
+  <CheckboxRoot class="component">
     <CheckboxIndicator
       width="20"
       :as="Icon"
@@ -13,7 +13,7 @@
   import { CheckboxIndicator, CheckboxRoot } from 'reka-ui'
 </script>
 
-<style module>
+<style scoped>
   .component {
     width: 24px;
     height: 24px;
@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: center;
     padding: 0;
-    border-radius: 8px;
+    border-radius: var(--border-radius-8);
     cursor: pointer;
     background-color: var(--color-input-background);
     border: 1px solid var(--color-input-border);
