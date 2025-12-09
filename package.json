@@ -32,7 +32,7 @@
     "@iconify-json/streamline": "1.2.5",
     "@iconify-json/tabler": "1.2.23",
     "@iconify/vue": "5.0.0",
-    "@types/node": "24.10.1",
+    "@types/node": "24.10.2",
     "@vitejs/plugin-vue": "6.0.2",
     "@vue/tsconfig": "0.8.1",
     "eslint": "9.39.1",
@@ -47,7 +47,7 @@
     "typescript": "5.9.3",
     "unplugin-icons": "22.5.0",
     "vite": "npm:rolldown-vite@7.2.10",
-    "vue-tsc": "3.1.7"
+    "vue-tsc": "3.1.8"
   },
   "packageManager": "pnpm@10.25.0",
   "pnpm": {
