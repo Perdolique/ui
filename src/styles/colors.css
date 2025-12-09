@@ -4,9 +4,14 @@
   /* Base colors */
   --color-text: oklch(25% 0.01 264deg);
   --color-background: oklch(100% 0 0deg);
+  --color-text-secondary: oklch(55% 0.01 264deg);
   --color-link: oklch(59% 0.20 252deg);
   --color-link-hover: oklch(67% 0.17 252deg);
-  --color-button-background: oklch(97% 0 0deg);
+  --color-button-background: oklch(94% 0.005 264deg);
+
+  /* Panel backgrounds */
+  --color-panel-background: oklch(97% 0.005 264deg);
+  --color-panel-border: oklch(91% 0.01 264deg);
 
   /* Input backgrounds */
   --color-input-background: oklch(100% 0 0deg);
@@ -36,10 +41,15 @@
 
     /* Base colors */
     --color-text: oklch(85% 0.01 264deg);
+    --color-text-secondary: oklch(65% 0.01 264deg);
     --color-background: oklch(15% 0.02 264deg);
     --color-link: oklch(67% 0.17 252deg);
     --color-link-hover: oklch(75% 0.17 252deg);
-    --color-button-background: oklch(26% 0.02 264deg);
+    --color-button-background: oklch(23% 0.02 264deg);
+
+    /* Panel backgrounds */
+    --color-panel-background: oklch(20% 0.02 264deg);
+    --color-panel-border: oklch(32% 0.02 264deg);
 
     /* Input backgrounds */
     --color-input-background: oklch(26% 0.02 264deg);

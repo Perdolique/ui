@@ -1,6 +1,8 @@
 @import url("colors.css") layer(colors);
 @import url("transitions.css") layer(transitions);
 @import url("spacings.css") layer(spacings);
+@import url("sizes.css") layer(sizes);
+@import url("typography.css") layer(typography);
 
 @layer base {
   :root {
@@ -14,11 +16,22 @@
     padding: var(--spacing-32);
     color: var(--color-text);
     background-color: var(--color-background);
+    font-family: var(--font-family);
   }
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
   }
+
+  button {
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
 }
 
-@layer colors, transitions, spacings, base;
+@layer colors, transitions, spacings, sizes, typography, base;

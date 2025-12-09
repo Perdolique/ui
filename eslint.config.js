@@ -31,6 +31,10 @@ export default defineConfig(
         style: {
           lang: 'css'
         }
+      }],
+
+      'vue/enforce-style-attribute': ['error', {
+        allow: ['scoped']
       }]
     }
   }
