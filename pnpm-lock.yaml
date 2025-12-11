@@ -28,11 +28,11 @@ importers:
         specifier: 5.0.0
         version: 5.0.0(vue@3.5.25(typescript@5.9.3))
       '@types/node':
-        specifier: 24.10.2
-        version: 24.10.2
+        specifier: 25.0.0
+        version: 25.0.0
       '@vitejs/plugin-vue':
         specifier: 6.0.2
-        version: 6.0.2(rolldown-vite@7.2.10(@types/node@24.10.2)(jiti@2.6.1)(yaml@2.8.2))(vue@3.5.25(typescript@5.9.3))
+        version: 6.0.2(rolldown-vite@7.2.10(@types/node@25.0.0)(jiti@2.6.1)(yaml@2.8.2))(vue@3.5.25(typescript@5.9.3))
       '@vue/tsconfig':
         specifier: 0.8.1
         version: 0.8.1(typescript@5.9.3)(vue@3.5.25(typescript@5.9.3))
@@ -71,7 +71,7 @@ importers:
         version: 22.5.0(@vue/compiler-sfc@3.5.25)
       vite:
         specifier: npm:rolldown-vite@7.2.10
-        version: rolldown-vite@7.2.10(@types/node@24.10.2)(jiti@2.6.1)(yaml@2.8.2)
+        version: rolldown-vite@7.2.10(@types/node@25.0.0)(jiti@2.6.1)(yaml@2.8.2)
       vue-tsc:
         specifier: 3.1.8
         version: 3.1.8(typescript@5.9.3)
@@ -443,8 +443,8 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/node@24.10.2':
-    resolution: {integrity: sha512-WOhQTZ4G8xZ1tjJTvKOpyEVSGgOTvJAfDK3FNFgELyaTpzhdgHVHeqW8V+UJvzF5BT+/B54T/1S2K6gd9c7bbA==}
+  '@types/node@25.0.0':
+    resolution: {integrity: sha512-rl78HwuZlaDIUSeUKkmogkhebA+8K1Hy7tddZuJ3D0xV8pZSfsYGTsliGUol1JPzu9EKnTxPC4L1fiWouStRew==}
 
   '@types/web-bluetooth@0.0.21':
     resolution: {integrity: sha512-oIQLCGWtcFZy2JW77j9k8nHzAOpqMHLQejDA48XXMWH6tjCQHz5RCFz1bzsmROyL6PUm+LLnUiI4BCn221inxA==}
@@ -1991,7 +1991,7 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/node@24.10.2':
+  '@types/node@25.0.0':
     dependencies:
       undici-types: 7.16.0
 
@@ -2092,10 +2092,10 @@ snapshots:
       '@typescript-eslint/types': 8.46.4
       eslint-visitor-keys: 4.2.1
 
-  '@vitejs/plugin-vue@6.0.2(rolldown-vite@7.2.10(@types/node@24.10.2)(jiti@2.6.1)(yaml@2.8.2))(vue@3.5.25(typescript@5.9.3))':
+  '@vitejs/plugin-vue@6.0.2(rolldown-vite@7.2.10(@types/node@25.0.0)(jiti@2.6.1)(yaml@2.8.2))(vue@3.5.25(typescript@5.9.3))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.50
-      vite: rolldown-vite@7.2.10(@types/node@24.10.2)(jiti@2.6.1)(yaml@2.8.2)
+      vite: rolldown-vite@7.2.10(@types/node@25.0.0)(jiti@2.6.1)(yaml@2.8.2)
       vue: 3.5.25(typescript@5.9.3)
 
   '@volar/language-core@2.4.26':
@@ -2914,7 +2914,7 @@ snapshots:
 
   reusify@1.1.0: {}
 
-  rolldown-vite@7.2.10(@types/node@24.10.2)(jiti@2.6.1)(yaml@2.8.2):
+  rolldown-vite@7.2.10(@types/node@25.0.0)(jiti@2.6.1)(yaml@2.8.2):
     dependencies:
       '@oxc-project/runtime': 0.101.0
       fdir: 6.5.0(picomatch@4.0.3)
@@ -2924,7 +2924,7 @@ snapshots:
       rolldown: 1.0.0-beta.53
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 24.10.2
+      '@types/node': 25.0.0
       fsevents: 2.3.3
       jiti: 2.6.1
       yaml: 2.8.2
