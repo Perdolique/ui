@@ -1,12 +1,12 @@
 <template>
   <main>
-    <CollapsiblePanel title="SimpleCheckbox">
+    <CollapsiblePanel title="CheckBox">
       <div class="checkboxes">
-        <SimpleCheckbox />
-        <SimpleCheckbox model-value />
-        <SimpleCheckbox disabled />
+        <CheckBox />
+        <CheckBox model-value />
+        <CheckBox disabled />
 
-        <SimpleCheckbox
+        <CheckBox
           disabled
           model-value
         />
@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-  import SimpleCheckbox from './components/SimpleCheckbox.vue'
+  import CheckBox from './components/CheckBox.vue'
   import CollapsiblePanel from './components/CollapsiblePanel.vue'
 </script>
 
