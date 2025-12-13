@@ -18,6 +18,7 @@
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
     "update:all": "taze -r -l -I latest",
+    "update:newest": "taze -r -l -I newest",
     "lint:styles": "stylelint 'src/**/*.vue' 'src/**/*.css'",
     "lint:oxlint": "oxlint",
     "lint:eslint": "eslint",
@@ -46,13 +47,8 @@
     "taze": "19.9.2",
     "typescript": "5.9.3",
     "unplugin-icons": "22.5.0",
-    "vite": "npm:rolldown-vite@7.2.10",
+    "vite": "8.0.0-beta.2",
     "vue-tsc": "3.1.8"
   },
-  "packageManager": "pnpm@10.25.0",
-  "pnpm": {
-    "overrides": {
-      "vite": "npm:rolldown-vite@7.2.10"
-    }
-  }
+  "packageManager": "pnpm@10.25.0"
 }

@@ -32,6 +32,10 @@
     color: inherit;
     cursor: pointer;
   }
+
+  summary {
+    box-sizing: border-box;
+  }
 }
 
 @layer colors, transitions, spacings, sizes, typography, base;

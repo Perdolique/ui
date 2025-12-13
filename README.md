@@ -12,7 +12,7 @@ A set of UI components for various projects built with Vue 3✨
 
 ## Components 🧩
 
-- `SimpleCheckbox` - Simple checkbox component
+- `CheckBox` - Simple checkbox component
 - `CollapsiblePanel` - Collapsible panel with smooth animations
 
 ## Icons 🖼️
