@@ -1,12 +1,12 @@
 <template>
-  <details>
-    <summary>
+  <details :class="$style.details">
+    <summary :class="$style.summary">
       {{ title }}
 
-      <ChevronDownIcon class="arrow" />
+      <ChevronDownIcon :class="$style.arrow" />
     </summary>
 
-    <div class="content">
+    <div :class="$style.content">
       <slot />
     </div>
   </details>
@@ -22,8 +22,9 @@
   defineProps<Props>()
 </script>
 
-<style scoped>
-  details {
+<style module>
+  .details {
+    --summary-height: 56px;
     --padding: var(--spacing-16);
     --transition-duration: var(--easing-duration-medium2);
 
@@ -46,9 +47,9 @@
     }
   }
 
-  summary {
+  .summary {
     list-style: none;
-    height: var(--input-height);
+    height: var(--summary-height);
     width: 100%;
     display: grid;
     grid-template-columns: 1fr auto;
@@ -87,7 +88,7 @@
       color: var(--color-text);
     }
 
-    details[open] & {
+    .details[open] & {
       transform: rotate(180deg);
     }
   }
