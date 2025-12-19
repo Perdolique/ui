@@ -36,6 +36,12 @@
   summary {
     box-sizing: border-box;
   }
+
+  input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+  }
 }
 
 @layer colors, transitions, spacings, sizes, typography, base;

@@ -34,7 +34,7 @@ export default defineConfig(
       }],
 
       'vue/enforce-style-attribute': ['error', {
-        allow: ['scoped']
+        allow: ['module']
       }]
     }
   }

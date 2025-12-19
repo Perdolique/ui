@@ -41,7 +41,7 @@
 
     /* Base colors */
     --color-text: oklch(85% 0.01 264deg);
-    --color-text-secondary: oklch(65% 0.01 264deg);
+    --color-text-secondary: oklch(70% 0.01 264deg);
     --color-background: oklch(15% 0.02 264deg);
     --color-link: oklch(67% 0.17 252deg);
     --color-link-hover: oklch(75% 0.17 252deg);
