@@ -3,7 +3,12 @@
     <summary :class="$style.summary">
       {{ title }}
 
-      <ChevronDownIcon :class="$style.arrow" />
+      <Icon
+        icon="tabler:chevron-down"
+        width="24"
+        height="24"
+        :class="$style.arrow"
+      />
     </summary>
 
     <div :class="$style.content">
@@ -13,7 +18,7 @@
 </template>
 
 <script lang="ts" setup>
-  import ChevronDownIcon from '~icons/tabler/chevron-down'
+  import { Icon } from '@iconify/vue'
 
   interface Props {
     title: string;
@@ -77,8 +82,6 @@
   }
 
   .arrow {
-    width: 24px;
-    height: 24px;
     color: var(--color-text-secondary);
     transition:
       transform var(--transition-duration) var(--easing-standard),

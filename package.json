@@ -16,6 +16,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
+    "build:packages": "pnpm --recursive run build",
     "preview": "vite preview",
     "update:all": "taze -r -l -I latest",
     "update:newest": "taze -r -l -I newest",
@@ -27,31 +28,37 @@
   },
   "dependencies": {
     "@fontsource-variable/inter": "5.2.8",
-    "vue": "3.5.26"
+    "@ui/check-box": "workspace:",
+    "@ui/collapsible-panel": "workspace:",
+    "@ui/text-input": "workspace:",
+    "@ui/theme": "workspace:",
+    "vue": "catalog:"
   },
   "devDependencies": {
     "@iconify-json/streamline": "1.2.5",
-    "@iconify-json/tabler": "1.2.24",
+    "@iconify-json/tabler": "1.2.26",
     "@iconify/vue": "5.0.0",
     "@stylistic/eslint-plugin": "5.6.1",
     "@types/node": "25.0.3",
     "@vitejs/plugin-vue": "6.0.3",
+    "@vue/language-core": "3.2.2",
     "@vue/tsconfig": "0.8.1",
     "eslint": "9.39.2",
-    "eslint-config-greenpie": "14.16.0",
+    "eslint-config-greenpie": "14.18.0",
     "eslint-plugin-vue": "10.6.2",
     "husky": "9.1.7",
-    "oxlint": "1.34.0",
-    "reka-ui": "2.6.1",
+    "oxlint": "1.38.0",
+    "reka-ui": "2.7.0",
     "stylelint": "16.26.1",
     "stylelint-config-recommended-vue": "1.6.1",
     "stylelint-config-standard": "39.0.1",
     "taze": "19.9.2",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.50.0",
+    "typescript-eslint": "8.52.0",
+    "unplugin-dts": "1.0.0-beta.6",
     "unplugin-icons": "22.5.0",
     "vite": "8.0.0-beta.3",
-    "vue-tsc": "3.1.8"
+    "vue-tsc": "3.2.2"
   },
-  "packageManager": "pnpm@10.26.1"
+  "packageManager": "pnpm@10.27.0"
 }

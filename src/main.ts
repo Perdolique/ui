@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import './styles/style.css'
+import '@ui/theme'
 import App from './App.vue'
 
 // FIXME: false-positive ESLint warning
