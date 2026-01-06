@@ -1,0 +1,40 @@
+{
+  "name": "@ui/collapsible-panel",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Collapsible panel component with smooth animations",
+  "author": "Roman Nuritdinov (Perdolique)",
+  "license": "UNLICENSED",
+  "main": "./dist/collapsible-panel.js",
+  "module": "./dist/collapsible-panel.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/collapsible-panel.js"
+    },
+    "./style.css": "./dist/collapsible-panel.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "ui",
+    "components",
+    "library",
+    "vue",
+    "collapsible",
+    "panel",
+    "accordion"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "@iconify/vue": "catalog:",
+    "@ui/theme": "workspace:",
+    "vue": "catalog:"
+  }
+}

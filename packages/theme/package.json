@@ -1,0 +1,67 @@
+{
+  "name": "@ui/theme",
+  "version": "0.0.1",
+  "description": "Base theme styles",
+  "author": "Roman Nuritdinov (Perdolique)",
+  "license": "UNLICENSED",
+  "sideEffects": true,
+  "types": "./index.d.ts",
+  "keywords": [
+    "css",
+    "styles",
+    "theme",
+    "ui"
+  ],
+
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./style.css"
+    },
+    "./colors": {
+      "types": "./index.d.ts",
+      "default": "./colors.css"
+    },
+    "./sizes": {
+      "types": "./index.d.ts",
+      "default": "./sizes.css"
+    },
+    "./spacings": {
+      "types": "./index.d.ts",
+      "default": "./spacings.css"
+    },
+    "./transitions": {
+      "types": "./index.d.ts",
+      "default": "./transitions.css"
+    },
+    "./typography": {
+      "types": "./index.d.ts",
+      "default": "./typography.css"
+    },
+    "./colors.css": {
+      "types": "./index.d.ts",
+      "default": "./colors.css"
+    },
+    "./sizes.css": {
+      "types": "./index.d.ts",
+      "default": "./sizes.css"
+    },
+    "./spacings.css": {
+      "types": "./index.d.ts",
+      "default": "./spacings.css"
+    },
+    "./transitions.css": {
+      "types": "./index.d.ts",
+      "default": "./transitions.css"
+    },
+    "./typography.css": {
+      "types": "./index.d.ts",
+      "default": "./typography.css"
+    }
+  },
+
+  "files": [
+    "*.css",
+    "*.d.ts"
+  ]
+}

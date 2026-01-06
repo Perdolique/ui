@@ -1,0 +1,40 @@
+{
+  "name": "@ui/check-box",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Check box component",
+  "author": "Roman Nuritdinov (Perdolique)",
+  "license": "UNLICENSED",
+  "main": "./dist/check-box.js",
+  "module": "./dist/check-box.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/check-box.js"
+    },
+    "./style.css": "./dist/check-box.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "ui",
+    "components",
+    "library",
+    "vue",
+    "reka-ui",
+    "checkbox"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "@iconify/vue": "catalog:",
+    "@ui/theme": "workspace:",
+    "reka-ui": "catalog:",
+    "vue": "catalog:"
+  }
+}

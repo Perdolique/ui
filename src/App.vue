@@ -40,9 +40,12 @@
 </template>
 
 <script setup lang="ts">
-  import CheckBox from './components/CheckBox.vue'
-  import CollapsiblePanel from './components/CollapsiblePanel.vue'
-  import TextInput from './components/TextInput.vue'
+  import CheckBox from '@ui/check-box'
+  import '@ui/check-box/style.css'
+  import CollapsiblePanel from '@ui/collapsible-panel'
+  import '@ui/collapsible-panel/style.css'
+  import TextInput from '@ui/text-input'
+  import '@ui/text-input/style.css'
 </script>
 
 <style module>
