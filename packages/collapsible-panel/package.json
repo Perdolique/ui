@@ -34,7 +34,9 @@
   },
   "peerDependencies": {
     "@iconify/vue": "catalog:",
-    "@ui/theme": "workspace:",
     "vue": "catalog:"
+  },
+  "devDependencies": {
+    "@ui/build-config": "workspace:"
   }
 }
