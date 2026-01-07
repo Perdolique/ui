@@ -112,7 +112,11 @@ importers:
         specifier: 3.2.2
         version: 3.2.2(typescript@5.9.3)
 
-  packages/build-config: {}
+  packages/build-config:
+    dependencies:
+      '@types/node':
+        specifier: 25.0.3
+        version: 25.0.3
 
   packages/check-box:
     dependencies:
