@@ -1,0 +1,27 @@
+{
+  "name": "@ui/build-config",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Shared build utilities for UI components",
+  "author": "Roman Nuritdinov (Perdolique)",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "25.0.3"
+  }
+}

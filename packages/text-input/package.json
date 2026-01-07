@@ -33,7 +33,9 @@
     "preview": "vite preview"
   },
   "peerDependencies": {
-    "@ui/theme": "workspace:",
     "vue": "catalog:"
+  },
+  "devDependencies": {
+    "@ui/build-config": "workspace:"
   }
 }
