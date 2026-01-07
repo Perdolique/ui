@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import dts from 'unplugin-dts/vite'
-import { generateScopedName } from '@ui/build-config'
+import { createHash, type BinaryLike } from 'crypto'
+import { basename } from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -18,7 +19,20 @@ export default defineConfig({
 
   css: {
     modules: {
-      generateScopedName
+      generateScopedName(className: string, filename: string, data: BinaryLike) : string {
+        const hash = createHash('sha256')
+          .update(data)
+          .digest('hex')
+          .slice(0, 6)
+
+        const filePath = filename
+          .replace(/\.vue(?:\?.+?)?$/u, '')
+          .replace(/\[|\]/gu, '')
+
+        const baseName = basename(filePath)
+
+        return `${baseName}_${className}_${hash}`
+      }
     }
   },
 
