@@ -33,8 +33,10 @@
   },
   "peerDependencies": {
     "@iconify/vue": "catalog:",
-    "@ui/theme": "workspace:",
     "reka-ui": "catalog:",
     "vue": "catalog:"
+  },
+  "devDependencies": {
+    "@ui/build-config": "workspace:"
   }
 }

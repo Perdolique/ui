@@ -102,7 +102,7 @@ Each component package is configured for npm publishing:
 **CSS handling:**
 
 - CSS is extracted to separate `.css` files (NOT injected into JS)
-- Users must import CSS separately: `import '@ui/component/style.css'`
+- Users must import CSS separately: `import '@ui/{component}/style.css'`
 - This approach provides better performance, caching, and SSR support
 
 ## Commands
