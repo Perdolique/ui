@@ -112,12 +112,6 @@ importers:
         specifier: 3.2.2
         version: 3.2.2(typescript@5.9.3)
 
-  packages/build-config:
-    dependencies:
-      '@types/node':
-        specifier: 25.0.3
-        version: 25.0.3
-
   packages/check-box:
     dependencies:
       '@iconify/vue':
@@ -129,10 +123,6 @@ importers:
       vue:
         specifier: 'catalog:'
         version: 3.5.26(typescript@5.9.3)
-    devDependencies:
-      '@ui/build-config':
-        specifier: 'workspace:'
-        version: link:../build-config
 
   packages/collapsible-panel:
     dependencies:
@@ -142,20 +132,12 @@ importers:
       vue:
         specifier: 'catalog:'
         version: 3.5.26(typescript@5.9.3)
-    devDependencies:
-      '@ui/build-config':
-        specifier: 'workspace:'
-        version: link:../build-config
 
   packages/text-input:
     dependencies:
       vue:
         specifier: 'catalog:'
         version: 3.5.26(typescript@5.9.3)
-    devDependencies:
-      '@ui/build-config':
-        specifier: 'workspace:'
-        version: link:../build-config
 
   packages/theme: {}
 
