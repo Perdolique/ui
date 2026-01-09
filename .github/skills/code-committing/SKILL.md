@@ -1,5 +1,5 @@
 ---
-name: code-commiting
+name: code-committing
 description: Generates semantic commit messages and commits code changes to version control. Use when staging changes, creating commits, writing commit messages, or when the user mentions git, commit, staging, or version control. Supports monorepo package updates tracking.
 license: Unlicense
 ---
@@ -22,7 +22,7 @@ license: Unlicense
 
 - **ALWAYS write commit messages in English only** - no other languages allowed
 - Use semantic commit style (also known as conventional commits)
-- Format: `<type>[scope]: summary` (≤50 chars, imperative)
+ Format: `<type>(<scope>): summary` or `<type>: summary` (≤50 chars, imperative)
 - Body (optional): bullets `- {emoji} {text}` (≤100 chars/line) following after blank line
 - Wrap package names, file names, or code snippets in backticks (`) for better readability
 
@@ -67,5 +67,5 @@ BREAKING CHANGE: Color token values changed from RGB to HSL format
 ## Issue Tracking
 
 - When fixing issues, include them at the end of commit message body
-- Format: `- Fixes ISSUE_NUMBER` (e.g., `- Fixes STL-1487`)
+- Format: - Fixes <ISSUE_NUMBER> (e.g., - Fixes #123 or - Fixes STL-1487)
 - Add one bullet per issue
