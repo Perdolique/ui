@@ -23,7 +23,6 @@
     "lint:styles": "stylelint 'src/**/*.vue' 'src/**/*.css'",
     "lint:oxlint": "oxlint --type-aware",
     "lint:eslint": "eslint --concurrency auto",
-    "lint:all": "pnpm run --parallel '/^lint:/'",
     "prepare": "husky"
   },
   "dependencies": {

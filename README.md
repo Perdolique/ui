@@ -83,4 +83,3 @@ import '@ui/text-input/style.css'
 | `pnpm lint:eslint` | Run ESLint |
 | `pnpm lint:oxlint` | Run Oxlint |
 | `pnpm lint:styles` | Run Stylelint on Vue and CSS files |
-| `pnpm lint:all` | Run all linters in parallel |
