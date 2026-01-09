@@ -1,9 +1,10 @@
+// oxlint-disable no-unsafe-member-access, no-unsafe-argument
 import { defineConfig, globalIgnores } from 'eslint/config'
 import { configs } from 'eslint-config-greenpie'
 
 export default defineConfig(
   globalIgnores([
-    'dist'
+    '**/dist'
   ]),
 
   ...configs.default,
