@@ -1,1 +1,3 @@
-pnpm run lint:all
+pnpm run lint:oxlint
+pnpm run lint:eslint
+pnpm run lint:styles

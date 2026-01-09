@@ -112,4 +112,3 @@ Each component package is configured for npm publishing:
   - `pnpm lint:eslint` - Run ESLint
   - `pnpm lint:oxlint` - Run Oxlint
   - `pnpm lint:styles` - Run Stylelint on Vue and CSS files
-  - `pnpm lint:all` - Run all linters in parallel
