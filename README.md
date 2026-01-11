@@ -13,9 +13,9 @@ A monorepo of Vue 3 UI component packages for various projects ✨
 
 ## Component Packages 📦
 
-- **`@ui/check-box`** - Checkbox component with Reka UI
-- **`@ui/collapsible-panel`** - Collapsible panel with smooth animations
-- **`@ui/text-input`** - Text input with floating label pattern
+- **`@perd-ui/check-box`** - Checkbox component with Reka UI
+- **`@perd-ui/collapsible-panel`** - Collapsible panel with smooth animations
+- **`@perd-ui/text-input`** - Text input with floating label pattern
 
 Each component is a standalone package that can be imported separately.
 
@@ -24,7 +24,7 @@ Each component is a standalone package that can be imported separately.
 ### Installing Components
 
 ```bash
-pnpm add @ui/check-box @ui/collapsible-panel @ui/text-input
+pnpm add @perd-ui/check-box @perd-ui/collapsible-panel @perd-ui/text-input
 ```
 
 ### Importing Components
@@ -33,14 +33,14 @@ pnpm add @ui/check-box @ui/collapsible-panel @ui/text-input
 
 ```typescript
 // Import component
-import CheckBox from '@ui/check-box'
-import CollapsiblePanel from '@ui/collapsible-panel'
-import TextInput from '@ui/text-input'
+import CheckBox from '@perd-ui/check-box'
+import CollapsiblePanel from '@perd-ui/collapsible-panel'
+import TextInput from '@perd-ui/text-input'
 
 // Import styles (required!)
-import '@ui/check-box/style.css'
-import '@ui/collapsible-panel/style.css'
-import '@ui/text-input/style.css'
+import '@perd-ui/check-box/style.css'
+import '@perd-ui/collapsible-panel/style.css'
+import '@perd-ui/text-input/style.css'
 ```
 
 **Why separate CSS imports?**

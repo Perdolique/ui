@@ -27,7 +27,7 @@ Each component package follows this structure:
 
 ```text
 packages/{component-name}/
-├── package.json   # Name: @ui/{component-name}, peerDependencies only
+├── package.json   # Name: @perd-ui/{component-name}, peerDependencies only
 ├── index.ts       # Export default Component
 ├── vite.config.ts # Library build with CSS modules scoped naming
 ├── tsconfig.json  # Extends @vue/tsconfig/tsconfig.dom.json
@@ -37,10 +37,10 @@ packages/{component-name}/
 
 **Key conventions:**
 
-- Package name: `@ui/{component-name}` (kebab-case)
+- Package name: `@perd-ui/{component-name}` (kebab-case)
 - Use `peerDependencies` only (no regular dependencies)
 - External deps: `catalog:` reference (from pnpm-workspace.yaml)
-- Internal deps: `workspace:` reference (e.g., `@ui/theme`)
+- Internal deps: `workspace:` reference (e.g., `@perd-ui/theme`)
 - Always externalize peerDependencies in vite.config.ts rollupOptions
 - CSS modules with scoped naming: `{baseName}_{className}_{hash}`
 
@@ -61,7 +61,7 @@ packages/{component-name}/
 
 **Theme integration:**
 
-- All components rely on CSS variables from `@ui/theme`
+- All components rely on CSS variables from `@perd-ui/theme`
 - No need to import theme in components - provided by root app
 - Use semantic tokens: `--color-*`, `--spacing-*`, `--easing-*`, etc.
 
@@ -102,7 +102,7 @@ Each component package is configured for npm publishing:
 **CSS handling:**
 
 - CSS is extracted to separate `.css` files (NOT injected into JS)
-- Users must import CSS separately: `import '@ui/{component}/style.css'`
+- Users must import CSS separately: `import '@perd-ui/{component}/style.css'`
 - This approach provides better performance, caching, and SSR support
 
 ## Commands
