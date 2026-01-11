@@ -2,6 +2,7 @@
   "extends": "@vue/tsconfig/tsconfig.dom.json",
 
   "compilerOptions": {
+    "lib": ["ES2024"],
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,

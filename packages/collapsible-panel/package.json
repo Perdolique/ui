@@ -1,10 +1,22 @@
 {
-  "name": "@ui/collapsible-panel",
+  "name": "@perd-ui/collapsible-panel",
   "type": "module",
   "version": "0.0.1",
   "description": "Collapsible panel component with smooth animations",
   "author": "Roman Nuritdinov (Perdolique)",
   "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Perdolique/ui.git",
+    "directory": "packages/collapsible-panel"
+  },
+  "homepage": "https://github.com/Perdolique/ui#readme",
+  "bugs": {
+    "url": "https://github.com/Perdolique/ui/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./dist/collapsible-panel.js",
   "module": "./dist/collapsible-panel.js",
   "types": "./dist/index.d.ts",

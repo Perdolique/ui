@@ -1,9 +1,21 @@
 {
-  "name": "@ui/theme",
+  "name": "@perd-ui/theme",
   "version": "0.0.1",
   "description": "Base theme styles",
   "author": "Roman Nuritdinov (Perdolique)",
   "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Perdolique/ui.git",
+    "directory": "packages/theme"
+  },
+  "homepage": "https://github.com/Perdolique/ui#readme",
+  "bugs": {
+    "url": "https://github.com/Perdolique/ui/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": true,
   "types": "./index.d.ts",
   "keywords": [

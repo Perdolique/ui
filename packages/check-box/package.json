@@ -1,10 +1,22 @@
 {
-  "name": "@ui/check-box",
+  "name": "@perd-ui/check-box",
   "type": "module",
   "version": "0.0.1",
   "description": "Check box component",
   "author": "Roman Nuritdinov (Perdolique)",
   "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Perdolique/ui.git",
+    "directory": "packages/check-box"
+  },
+  "homepage": "https://github.com/Perdolique/ui#readme",
+  "bugs": {
+    "url": "https://github.com/Perdolique/ui/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./dist/check-box.js",
   "module": "./dist/check-box.js",
   "types": "./dist/index.d.ts",
