@@ -1,3 +1,4 @@
 pnpm run lint:oxlint
 pnpm run lint:eslint
 pnpm run lint:styles
+pnpm run build:packages
