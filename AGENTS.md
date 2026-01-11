@@ -107,8 +107,8 @@ Each component package is configured for npm publishing:
 
 ## Commands
 
-- Build packages: `pnpm build:packages` - Build all component packages for publishing
+- Build packages: `pnpm run build:packages` - Build all component packages for publishing
 - Linters can be run with the following commands:
-  - `pnpm lint:eslint` - Run ESLint
-  - `pnpm lint:oxlint` - Run Oxlint
-  - `pnpm lint:styles` - Run Stylelint on Vue and CSS files
+  - `pnpm run lint:eslint` - Run ESLint
+  - `pnpm run lint:oxlint` - Run Oxlint
+  - `pnpm run lint:styles` - Run Stylelint on Vue and CSS files

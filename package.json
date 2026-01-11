@@ -23,14 +23,15 @@
     "lint:styles": "stylelint 'src/**/*.vue' 'src/**/*.css'",
     "lint:oxlint": "oxlint --type-aware",
     "lint:eslint": "eslint --concurrency auto",
+    "release:publish": "pnpm build:packages && pnpm --filter './packages/*' publish --access public",
     "prepare": "husky"
   },
   "dependencies": {
     "@fontsource-variable/inter": "5.2.8",
-    "@ui/check-box": "workspace:^",
-    "@ui/collapsible-panel": "workspace:^",
-    "@ui/text-input": "workspace:^",
-    "@ui/theme": "workspace:^",
+    "@perd-ui/check-box": "workspace:^",
+    "@perd-ui/collapsible-panel": "workspace:^",
+    "@perd-ui/text-input": "workspace:^",
+    "@perd-ui/theme": "workspace:^",
     "vue": "catalog:"
   },
   "devDependencies": {
@@ -38,7 +39,7 @@
     "@iconify-json/tabler": "1.2.26",
     "@iconify/vue": "5.0.0",
     "@stylistic/eslint-plugin": "5.7.0",
-    "@types/node": "25.0.3",
+    "@types/node": "25.0.6",
     "@vitejs/plugin-vue": "6.0.3",
     "@vue/language-core": "3.2.2",
     "@vue/tsconfig": "0.8.1",
@@ -59,5 +60,5 @@
     "vite": "8.0.0-beta.7",
     "vue-tsc": "3.2.2"
   },
-  "packageManager": "pnpm@10.27.0"
+  "packageManager": "pnpm@10.28.0"
 }
