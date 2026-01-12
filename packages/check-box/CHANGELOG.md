@@ -1,5 +1,12 @@
 # @perd-ui/check-box
 
+## [0.1.1](https://github.com/Perdolique/ui/compare/check-box-v0.1.0...check-box-v0.1.1) (2026-01-12)
+
+
+### Features
+
+* add package READMEs and update usage examples ([b8ab74f](https://github.com/Perdolique/ui/commit/b8ab74f72c0c3ff11a5a4ece944c261047ce3fe9))
+
 ## [0.1.0](https://github.com/Perdolique/ui/compare/check-box-v0.0.2...check-box-v0.1.0) (2026-01-12)
 
 
