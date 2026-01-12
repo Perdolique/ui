@@ -28,7 +28,8 @@
     "./style.css": "./dist/check-box.css"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "keywords": [
     "ui",

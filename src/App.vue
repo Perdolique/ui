@@ -40,12 +40,12 @@
 </template>
 
 <script setup lang="ts">
-  import CheckBox from '@ui/check-box'
-  import '@ui/check-box/style.css'
-  import CollapsiblePanel from '@ui/collapsible-panel'
-  import '@ui/collapsible-panel/style.css'
-  import TextInput from '@ui/text-input'
-  import '@ui/text-input/style.css'
+  import CheckBox from '@perd-ui/check-box'
+  import '@perd-ui/check-box/style.css'
+  import CollapsiblePanel from '@perd-ui/collapsible-panel'
+  import '@perd-ui/collapsible-panel/style.css'
+  import TextInput from '@perd-ui/text-input'
+  import '@perd-ui/text-input/style.css'
 </script>
 
 <style module>

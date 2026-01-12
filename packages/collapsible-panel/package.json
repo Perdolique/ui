@@ -28,7 +28,8 @@
     "./style.css": "./dist/collapsible-panel.css"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "keywords": [
     "ui",
