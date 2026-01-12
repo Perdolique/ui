@@ -24,39 +24,50 @@ Each component is a standalone package that can be imported separately.
 ### Installing Components
 
 ```bash
+# Required packages
+pnpm add @perd-ui/theme @fontsource-variable/inter
+
+# Components
 pnpm add @perd-ui/check-box @perd-ui/collapsible-panel @perd-ui/text-input
+
+# Peer dependencies
+pnpm add vue @iconify/vue reka-ui
 ```
 
-### Importing Components
+### Setup
 
-**Important:** You must import both the component and its styles:
+Import theme once in `main.ts`:
 
 ```typescript
-// Import component
-import CheckBox from '@perd-ui/check-box'
-import CollapsiblePanel from '@perd-ui/collapsible-panel'
-import TextInput from '@perd-ui/text-input'
+import { createApp } from 'vue'
+import '@perd-ui/theme' // Design tokens, fonts, base styles
+import App from './App.vue'
 
-// Import styles (required!)
-import '@perd-ui/check-box/style.css'
-import '@perd-ui/collapsible-panel/style.css'
-import '@perd-ui/text-input/style.css'
+createApp(App).mount('#app')
 ```
 
-**Why separate CSS imports?**
+Import components with their styles:
 
-- Better performance (parallel loading)
-- Improved caching
-- SSR compatibility
-- Tree-shaking support
-- Zero runtime overhead
+```vue
+<script setup lang="ts">
+  import CheckBox from '@perd-ui/check-box'
+  import '@perd-ui/check-box/style.css'
+</script>
+```
 
 ## Icons 🖼️
 
-- `@iconify/vue` - Iconify integration for component packages
-- `@iconify-json/tabler` - Tabler icons collection
-- `@iconify-json/streamline` - Streamline icons collection
-- `unplugin-icons` - Auto-import icons in root app
+Components use `@iconify/vue` for icons:
+
+```vue
+<script setup lang="ts">
+  import { Icon } from '@iconify/vue'
+</script>
+
+<template>
+  <Icon icon="tabler:check" />
+</template>
+```
 
 ## Styling 🎨
 
