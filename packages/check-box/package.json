@@ -1,7 +1,7 @@
 {
   "name": "@perd-ui/check-box",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Check box component",
   "author": "Roman Nuritdinov (Perdolique)",
   "license": "UNLICENSED",

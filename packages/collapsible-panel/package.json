@@ -1,7 +1,7 @@
 {
   "name": "@perd-ui/collapsible-panel",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Collapsible panel component with smooth animations",
   "author": "Roman Nuritdinov (Perdolique)",
   "license": "UNLICENSED",
