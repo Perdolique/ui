@@ -44,7 +44,7 @@
     "@vue/language-core": "3.2.2",
     "@vue/tsconfig": "0.8.1",
     "eslint": "9.39.2",
-    "eslint-config-greenpie": "15.0.1-11",
+    "eslint-config-greenpie": "15.0.1-13",
     "eslint-plugin-vue": "10.7.0",
     "husky": "9.1.7",
     "oxlint": "1.39.0",
