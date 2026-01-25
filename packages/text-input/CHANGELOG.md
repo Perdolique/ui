@@ -1,5 +1,13 @@
 # @perd-ui/text-input
 
+## [0.1.2](https://github.com/Perdolique/ui/compare/text-input-v0.1.1...text-input-v0.1.2) (2026-01-25)
+
+
+### Features
+
+* **all:** export component props types ([6e4c491](https://github.com/Perdolique/ui/commit/6e4c4910b3f38c25fe2b12439a7d9cfe150dfea1))
+* export component props types and update dependencies ([ed830c5](https://github.com/Perdolique/ui/commit/ed830c56f0551fe17c25d022f74ae130ccbf0cea))
+
 ## [0.1.1](https://github.com/Perdolique/ui/compare/text-input-v0.1.0...text-input-v0.1.1) (2026-01-12)
 
 
