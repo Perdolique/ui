@@ -44,6 +44,38 @@ packages/{component-name}/
 - Always externalize peerDependencies in vite.config.ts rollupOptions
 - CSS modules with scoped naming: `{baseName}_{className}_{hash}`
 
+**Props type exports (REQUIRED):**
+
+- Always define props with exported interface: `export { Props as {ComponentName}Props }` at the end of `<script setup>`
+- Re-export props types in `index.ts`: `export type { {ComponentName}Props } from './src/{ComponentName}.vue'`
+- This allows consumers to create typed wrapper components without duplicating prop definitions
+- Example pattern:
+
+  ```vue
+  <!-- Component.vue -->
+  <script lang="ts" setup>
+    export interface Props {
+      required: string;
+      optional?: number;
+    }
+
+    defineProps<Props>()
+
+    export {
+      Props as ComponentProps
+    }
+  </script>
+  ```
+
+  ```typescript
+  // index.ts
+  import Component from './src/Component.vue'
+
+  export type { ComponentProps } from './src/Component.vue'
+
+  export default Component
+  ```
+
 **Icon handling:**
 
 - In packages: Use `@iconify/vue` component (peerDependency)

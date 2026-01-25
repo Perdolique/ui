@@ -25,6 +25,10 @@
   }
 
   defineProps<Props>()
+
+  export type {
+    Props as CollapsiblePanelProps
+  }
 </script>
 
 <style module>

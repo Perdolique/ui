@@ -55,6 +55,42 @@ Import components with their styles:
 </script>
 ```
 
+### Type Imports
+
+All components export their props types, useful for creating typed wrappers:
+
+```vue
+<script setup lang="ts">
+  import TextInput, type { TextInputProps } from '@perd-ui/text-input'
+  import '@perd-ui/text-input/style.css'
+
+  // Create a wrapper with additional props
+  interface CustomInputProps extends TextInputProps {
+    error?: string;
+  }
+
+  const props = defineProps<CustomInputProps>()
+</script>
+
+<template>
+  <div>
+    <TextInput
+      :label="props.label"
+      :placeholder="props.placeholder"
+      :id="props.id"
+    />
+
+    <p v-if="props.error">{{ props.error }}</p>
+  </div>
+</template>
+```
+
+**Available prop types:**
+
+- `TextInputProps` from `@perd-ui/text-input`
+- `CheckBoxProps` from `@perd-ui/check-box`
+- `CollapsiblePanelProps` from `@perd-ui/collapsible-panel`
+
 ## Icons 🖼️
 
 Components use `@iconify/vue` for icons:

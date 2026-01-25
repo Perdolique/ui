@@ -31,6 +31,10 @@
   defineOptions({
     inheritAttrs: false
   })
+
+  export type {
+    Props as TextInputProps
+  }
 </script>
 
 <style module>
