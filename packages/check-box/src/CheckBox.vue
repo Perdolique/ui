@@ -1,5 +1,9 @@
 <template>
-  <CheckboxRoot :class="$style.component">
+  <CheckboxRoot
+    v-model="model"
+    :disabled="disabled"
+    :class="$style.component"
+  >
     <CheckboxIndicator
       width="20"
       :as="Icon"
@@ -10,7 +14,19 @@
 
 <script lang="ts" setup>
   import { Icon } from '@iconify/vue'
-  import { CheckboxIndicator, CheckboxRoot } from 'reka-ui'
+  import { CheckboxIndicator, CheckboxRoot, type CheckboxRootProps } from 'reka-ui'
+
+  interface Props {
+    disabled?: boolean;
+  }
+
+  defineProps<Props>()
+
+  const model = defineModel<CheckboxRootProps['modelValue']>()
+
+  export type {
+    Props as CheckBoxProps
+  }
 </script>
 
 <style module>
