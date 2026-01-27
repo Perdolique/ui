@@ -1,15 +1,24 @@
 <template>
   <span :class="$style.component">
     <input
-      v-bind="$attrs"
       :id="inputId"
+      v-model="model"
       :class="$style.input"
+      :autocomplete="autocomplete"
+      :autofocus="autofocus"
+      :inputmode="inputmode"
+      :pattern="pattern"
       :placeholder="placeholder"
+      :required="required"
+      :type="type"
+      :disabled="disabled"
+      @focus="onFocus"
+      @blur="onBlur"
     >
 
     <label
       :for="inputId"
-      :class="$style.label"
+      :class="[$style.label, { withValue: hasValue }]"
     >
       {{ label }}
     </label>
@@ -17,20 +26,41 @@
 </template>
 
 <script lang="ts" setup>
-  import { computed, useId } from 'vue'
+  import { computed, useId, type InputHTMLAttributes } from 'vue'
 
   interface Props {
-    label: string;
-    id?: string;
-    placeholder?: string;
+    readonly label: string;
+    readonly id?: string;
+    readonly autocomplete?: InputHTMLAttributes['autocomplete'];
+    readonly autofocus?: InputHTMLAttributes['autofocus'];
+    readonly inputmode?: InputHTMLAttributes['inputmode'];
+    readonly pattern?: InputHTMLAttributes['pattern'];
+    readonly placeholder?: InputHTMLAttributes['placeholder'];
+    readonly required?: InputHTMLAttributes['required'];
+    readonly type?: InputHTMLAttributes['type'];
+    readonly disabled?: InputHTMLAttributes['disabled'];
   }
 
-  const { placeholder = '', id } = defineProps<Props>()
-  const inputId = computed(() => id ?? useId())
+  type Emits = (event: 'focus' | 'blur') => void
 
-  defineOptions({
-    inheritAttrs: false
+  const props = defineProps<Props>()
+  const emit = defineEmits<Emits>()
+
+  const model = defineModel<string>({
+    default: ''
   })
+
+  const hasValue = computed(() => model.value !== '')
+  // @ts-expect-error InputHTMLAttributes['autocomplete'] causes issues for vue-tsc https://github.com/vuejs/language-tools/issues/594
+  const inputId = computed(() => props.id ?? useId())
+
+  function onFocus() {
+    emit('focus')
+  }
+
+  function onBlur() {
+    emit('blur')
+  }
 
   export type {
     Props as TextInputProps
@@ -39,19 +69,20 @@
 
 <style module>
   .component {
-    --horizontal-padding: 24px;
+    --horizontal-padding: var(--spacing-16);
     --padding-top: 12px;
 
     display: inline-block;
+    width: 100%;
     position: relative;
     height: var(--input-height);
     background-color: var(--color-input-background);
-    border-radius: var(--input-height);
+    border-radius: var(--border-radius-16);
     overflow: hidden;
     border: 1px solid var(--color-input-border);
-    transition-property: border-color, box-shadow;
-    transition-duration: var(--easing-duration-short4);
-    transition-timing-function: var(--easing-standard);
+    transition:
+      border-color var(--easing-duration-short4) var(--easing-standard),
+      box-shadow var(--easing-duration-short4) var(--easing-standard);
 
     &:focus-within {
       border-color: transparent;
@@ -66,24 +97,21 @@
 
   .input {
     appearance: none;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    padding: calc(var(--padding-top) + 8px) var(--horizontal-padding) 0;
+    position: absolute;
+    inset: 0;
+    padding: var(--padding-top) var(--horizontal-padding) 0;
     border: none;
     outline: none;
     background: none;
 
     &::placeholder {
-      color: var(--color-text-secondary);
-      opacity: 0;
-      transition: opacity var(--easing-duration-short4) var(--easing-standard);
+      color: transparent;
+      user-select: none;
+      transition: color var(--easing-duration-short4) var(--easing-standard);
     }
 
-    &:focus {
-      &::placeholder {
-        opacity: 0.7;
-      }
+    &:focus::placeholder {
+      color: var(--color-input-placeholder);
     }
 
     &:disabled {
@@ -94,19 +122,20 @@
   .label {
     position: absolute;
     inset: 0;
-    pointer-events: none;
-    padding: 0 var(--horizontal-padding);
+    left: var(--horizontal-padding);
     align-content: center;
-    transform-origin: left top;
-    transition-property: translate, font-size;
-    transition-duration: var(--easing-duration-short4);
-    transition-timing-function: var(--easing-standard);
+    pointer-events: none;
+    user-select: none;
     color: var(--color-text-secondary);
+    transform-origin: top left;
+    transition:
+      translate var(--easing-duration-short3) linear,
+      scale var(--easing-duration-short3) linear;
 
-    .component:focus-within > &,
-    .component:has(.input:not(:placeholder-shown)) & {
-      translate: 0 calc(-1 * var(--padding-top));
-      font-size: 0.8rem;
+    &:global(.withValue),
+    .component:focus-within > & {
+      translate: 0 -5px;
+      scale: 0.7;
     }
   }
 </style>

@@ -4,8 +4,8 @@
   /* Border radius scale */
   --border-radius-4: 4px;      /* small things (badges, chips) */
   --border-radius-8: 8px;      /* small things (badges, chips) */
-  --border-radius-12: 12px;    /* buttons, inputs */
-  --border-radius-16: 16px;    /* cards */
+  --border-radius-12: 12px;    /* ??? */
+  --border-radius-16: 16px;    /* buttons, inputs */
   --border-radius-20: 20px;    /* main containers */
   --border-radius-24: 24px;    /* dialogues, modals */
   --border-radius-28: 28px;    /* large containers */
