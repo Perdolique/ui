@@ -1,6 +1,6 @@
 {
   "packages/check-box": "0.1.2",
-  "packages/text-input": "0.1.2",
+  "packages/text-input": "0.1.3",
   "packages/collapsible-panel": "0.1.2",
-  "packages/theme": "0.1.1"
+  "packages/theme": "0.1.2"
 }
