@@ -25,6 +25,10 @@
   --color-input-border-active: oklch(59% 0.20 252deg);
   --color-input-border-active-hover: oklch(52% 0.23 252deg);
 
+  /* Input (other) */
+  --color-input-placeholder: oklch(75% 0.01 264deg);
+  --shadow-focus-ring: 0 0 0 2px var(--color-input-focus);
+
   /* Icons */
   --color-input-icon: oklch(100% 0 0deg);
 
@@ -62,6 +66,10 @@
     --color-input-border-hover: oklch(51% 0.02 264deg);
     --color-input-border-active: oklch(67% 0.17 252deg);
     --color-input-border-active-hover: oklch(59% 0.20 252deg);
+
+    /* Input (other) */
+    --color-input-placeholder: oklch(55% 0.01 264deg);
+    --shadow-focus-ring: 0 0 0 2px var(--color-input-focus);
 
     /* Icons */
     --color-input-icon: oklch(100% 0 0deg);

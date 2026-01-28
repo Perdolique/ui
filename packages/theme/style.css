@@ -5,10 +5,6 @@
 @import url("typography.css") layer(typography);
 
 @layer base {
-  :root {
-    --shadow-focus-ring: 0 0 0 2px var(--color-input-focus);
-  }
-
   body {
     margin: 0;
     min-width: 320px;
