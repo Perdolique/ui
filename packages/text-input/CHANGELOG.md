@@ -1,5 +1,12 @@
 # @perd-ui/text-input
 
+## [0.1.3](https://github.com/Perdolique/ui/compare/text-input-v0.1.2...text-input-v0.1.3) (2026-01-28)
+
+
+### Features
+
+* **text-input:** enhance component with explicit props and v-model ([154a32c](https://github.com/Perdolique/ui/commit/154a32c40c1e9fb44a1aa90567543ccce1e2f519))
+
 ## [0.1.2](https://github.com/Perdolique/ui/compare/text-input-v0.1.1...text-input-v0.1.2) (2026-01-25)
 
 
