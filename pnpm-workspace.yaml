@@ -2,9 +2,9 @@ packages:
   - packages/*
 
 catalog:
-  '@iconify/vue': 5.0.0
-  reka-ui: 2.8.0
-  vue: 3.5.27
+  '@iconify/vue': 5.0.1
+  reka-ui: 2.9.7
+  vue: 3.5.34
 
 cleanupUnusedCatalogs: true
 
